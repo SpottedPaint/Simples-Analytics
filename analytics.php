@@ -10,7 +10,7 @@ License: The Software shall be used for Good, not Evil.
 */
 
 function isHiddenDomain($options){
-  if($options['hidden_domain'] !== ''){
+	if($options['hidden_domain'] !== ''){
 		return (strpos($_SERVER['SERVER_NAME'],$options['hidden_domain']) !== False);
 	}
 	return False;
